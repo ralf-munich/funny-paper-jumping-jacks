@@ -114,12 +114,25 @@ button.hero-image {
     margin: 0;
   }
   .category-grid { grid-template-columns: 1fr; }
+  .category-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .category-card img {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .category-card-text {
+    padding: 18px 20px 20px;
+    background: var(--panel);
+    border-top: 1px solid var(--line);
+  }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
 @media (max-width: 680px) {
   .wrap { width: min(100% - 28px, 1180px); }
   .header-inner, .footer-inner { flex-direction: column; align-items:flex-start; }
   .gallery-grid { grid-template-columns: 1fr; }
-  .category-card { grid-template-columns: 1fr; }
-  .category-card-text { padding: 0 18px 18px; }
+  .category-card-text { padding: 16px 18px 18px; }
 }
