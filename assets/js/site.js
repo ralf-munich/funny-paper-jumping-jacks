@@ -1,6 +1,6 @@
 
 document.addEventListener('click', (event) => {
-  const item = event.target.closest('.gallery-item');
+  const item = event.target.closest('.gallery-item, .hero-image[data-full]');
   const lightbox = document.getElementById('lightbox');
   if (item && lightbox) {
     const img = lightbox.querySelector('.lightbox-image');
