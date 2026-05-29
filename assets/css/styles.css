@@ -80,6 +80,11 @@ button.hero-image {
 .category-card-text { padding: 24px 24px 24px 0; display:flex; flex-direction:column; justify-content:center; }
 .category-card-text p { margin: 12px 0 0; color: var(--muted); line-height: 1.6; }
 .page-text { max-width: 48rem; }
+.page-text h2 {
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+  line-height: 1.18;
+  margin-top: 2.2rem;
+}
 .page-text p { font-size: 1.08rem; line-height: 1.78; color: #2a2722; }
 .gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; }
 .gallery-item {
