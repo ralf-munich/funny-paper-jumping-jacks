@@ -93,17 +93,19 @@ button.hero-image {
 }
 .about-figure {
   display: block;
-  margin: 1.5rem 0 2.3rem;
+  margin: 1.5rem 0 2.3rem 0;
   background: var(--panel);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   padding: 14px;
 }
 .about-figure-half {
-  width: min(46%, 360px);
+  width: 50%;
+  max-width: 360px;
 }
 .about-figure-wide {
-  width: min(66%, 520px);
+  width: 66.666%;
+  max-width: 520px;
 }
 .about-figure img {
   display: block;
@@ -209,10 +211,10 @@ button.hero-image {
   }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .about-figure-half {
-    width: min(58%, 360px);
+    width: 58%;
   }
   .about-figure-wide {
-    width: min(78%, 520px);
+    width: 78%;
   }
 }
 @media (max-width: 680px) {
