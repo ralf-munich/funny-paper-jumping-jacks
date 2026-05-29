@@ -92,6 +92,7 @@ button.hero-image {
   line-height: 1.7;
 }
 .about-figure {
+  width: min(52%, 420px);
   margin: 1.5rem 0 2.3rem;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -200,6 +201,9 @@ button.hero-image {
     border-top: 1px solid var(--line);
   }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .about-figure {
+    width: min(68%, 420px);
+  }
 }
 @media (max-width: 680px) {
   .wrap { width: min(100% - 28px, 1180px); }
@@ -207,4 +211,7 @@ button.hero-image {
   .footer-contact { align-items: flex-start; }
   .gallery-grid { grid-template-columns: 1fr; }
   .category-card-text { padding: 16px 18px 18px; }
+  .about-figure {
+    width: 100%;
+  }
 }
